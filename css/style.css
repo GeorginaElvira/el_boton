@@ -5,8 +5,16 @@ font-family: 'Roboto Condensed', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Days+One&display=swap');
 /* font-family: 'Archivo Black', sans-serif;
 font-family: 'Days One', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Pacifico&display=swap');
+/* font-family: 'Mooli', sans-serif;
+font-family: 'Pacifico', cursive; */
+
+
 * {
     margin: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Estilos para el logo inicial */
@@ -41,68 +49,84 @@ font-family: 'Days One', sans-serif; */
         animation-timing-function: ease-out; /* Final suave (ease-out) */
     }
 }
+
 @keyframes desvanecimiento {
     0% {opacity: 1;}
     50% {opacity: 1;}
     100% {opacity: 0; display: none;}
 }
 
-.cabecera{
+.cabecera {
     display: flex;
     font-family: 'Montserrat', sans-serif;
-    background-image: url('../img/ladrillos.png');
+    background-image: url('../img/arpillera_2.jpg');
     /* Opcionalmente, puedes ajustar la posición y el tamaño de la imagen de fondo */
     background-position: center;
     background-size: cover; /* Escala la imagen para cubrir toda la cabecera */
-    height: 300px;
-    width: 100vw; /* Ancho de la pantalla */
+    height: 50vh;
+    width: 100%; /* Ancho de la pantalla */
     margin-bottom: 10px;
     color: black; /* Color del texto en la cabecera */
     flex-direction: column;
     justify-content: space-around;
-
+    align-items: center;
 }
+
 
 /* Estilos para el encabezado dentro de .cabecera */
 .cabecera header {
+    width: 90vw;
+    height: auto;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    margin: 10px 30px 0px 30px;
+    margin: 30px 30px 0px 30px;
 }
 
 /* Estilos para el logo */
 .cabecera #logo {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra con desplazamiento x=0, y=0, 
+    radio de desenfoque 10px y color rgba(0, 0, 0, 0.5) */
 }
 
-/* Estilos para el texto "TEKOVÉ" */
+/* Estilos para el texto "EL BOTON DE CORALINE" */
 .cabecera h1 {
-    font-family: 'Montserrat', sans-serif;
-    align-self: center;
-    font-size: 5.5vw;
-
-    margin-left: 5%; /* Elimina el margen para evitar espacios innecesarios */
+    font-family: 'Pacifico', cursive;
+    font-size: 7vw; /* Tamaño de fuente relativo al 5% del ancho del contenedor */
+    margin-left: 5%; /* Margen del logo */
 }
-
-
 
 /* Estilos para la barra de navegación */
 .cabecera nav {
-    margin: 30px; /* Margen */
+    margin: 0px, 30px, 30px, 30px; /* Margen */
     align-self: flex-end; /* Alineamos la barra de navegación al final del contenedor */
 }
 
 /* Estilos para los enlaces de navegación */
 .cabecera nav a {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-right: 20px; /* Separación entre los enlaces */
     text-decoration: none; /* Quita el subrayado de los enlaces */
     color: black; /* Color del texto de los enlaces */
 }
 
+.container_nosotros {
+    margin: 5%;
+}
 
+.container_nosotros h2 {
+    font-family: 'Mooli', sans-serif;
+    font-size: 3em;
+    margin: 10px 0px 10px 0px;
+}
+
+.container_nosotros p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
 
 p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
