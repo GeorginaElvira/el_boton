@@ -9,6 +9,7 @@
     <!--link de iconos-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!--link de fuentes-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>EL BOTON</title>
 </head>
 <body>
@@ -28,6 +29,23 @@
 
     <h2>CONTACTO</h2>
 
+     <form class="ms-3"> 
+        <div class="col-sm-5">
+            <legend>Formulario de contacto</legend>
+            <label for="campo_nombre" class="form-label">Nombre:</label>
+            <input type="text"  class="form-control" id="campo_nombre" placeholder="Escribe tu nombre" required>
+            <label for="campo_correo" class="form-label">Correo Electronico</label>
+            <input type="email" class="form-control" id="campo_correo" placeholder="Escribe tu correo electronico" required>
+            <label for="asunto" class="form-label">Asunto</label>
+            <input type="text" class="form-control" id="asunto" placeholder="Escribe el asunto" required>
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" id="mensaje" rows="5" cols="2"  placeholder="Escribe el mensaje" required></textarea>
+            <br>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" Class="btn btn-secondary">Cancelar</button>
+        </div>    
+    </form>
+    
     <footer>
         <h5>NUESTRAS REDES</h5>
         <a href="">
